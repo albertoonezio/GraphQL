@@ -1,14 +1,14 @@
-const { ApolloServer, gql } = require('apollo-server')
+const { ApolloServer, gql } = require('apollo-server');
 
-const typeDefs = gql``
+const typeDefs = gql``;
 
-const resolvers = {}
+const resolvers = {};
 
 const server = new ApolloServer({
     typeDefs,
     resolvers
-})
+});
 
 server.listen().then(({ url }) => {
-    console.log(`Executando em ${url}`)
-})
+    console.log(`Executando em ${url}`);
+});
