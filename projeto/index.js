@@ -1,8 +1,14 @@
 const { ApolloServer, gql } = require('apollo-server');
 
-const typeDefs = gql``;
+const typeDefs = gql`
+    horaAtual: String
+`;
 
-const resolvers = {};
+const resolvers = {
+    horaAtual() {
+        return `${new Date}`
+    }
+};
 
 const server = new ApolloServer({
     typeDefs,
